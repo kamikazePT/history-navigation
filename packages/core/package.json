@@ -1,0 +1,18 @@
+{
+  "name": "@history-navigation/core",
+  "version": "0.0.0",
+  "description": "Wrapper of the history module to listen for navigation events",
+  "repository": "",
+  "author": "Afonso Santos aka KamikazePT",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/cjs/*",
+    "dist/esm/*"
+  ],
+  "scripts": {
+    "preinstall": "'../../scripts/preinstall.js'"
+  }
+}

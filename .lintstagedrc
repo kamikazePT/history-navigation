@@ -1,0 +1,8 @@
+{
+  "*.{js,jsx}": [
+    "prettier-eslint --write",
+    "eslint",
+    "jest --passWithNoTests --findRelatedTests",
+    "git add"
+  ]
+}

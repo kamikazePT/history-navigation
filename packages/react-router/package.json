@@ -1,0 +1,26 @@
+{
+  "name": "@history-navigation/react-router",
+  "version": "0.0.0",
+  "description": "Wrapper of the history module to listen for navigation events",
+  "repository": "",
+  "author": "Afonso Santos aka KamikazePT",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/cjs/*",
+    "dist/esm/*"
+  ],
+  "scripts": {
+    "preinstall": "'../../scripts/preinstall.js'"
+  },
+  "dependencies": {
+    "@history-navigation/core": "^0.0.0",
+    "prop-types": "^15.7.2",
+    "use-react-router": "^1.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}

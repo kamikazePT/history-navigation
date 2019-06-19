@@ -1,0 +1,12 @@
+#Node modules folder
+node_modules
+
+#VSCode
+.vscode
+
+#log files
+*.log
+
+#source folder
+src
+
