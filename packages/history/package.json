@@ -1,11 +1,10 @@
 {
   "name": "@history-navigation/history",
-  "version": "0.0.1-rc.0",
+  "version": "0.0.0",
   "description": "Wrapper of the history module to listen for navigation events",
   "repository": "",
   "author": "Afonso Santos aka KamikazePT",
   "license": "MIT",
-  "private": true,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
