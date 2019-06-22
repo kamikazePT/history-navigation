@@ -1,6 +1,6 @@
 {
   "name": "@history-navigation/react-router",
-  "version": "0.0.0",
+  "version": "0.0.1-rc.0",
   "description": "React Router bindings for history navigation",
   "repository": "",
   "author": "Afonso Santos aka KamikazePT",
@@ -16,7 +16,7 @@
     "preinstall": "'../../scripts/preinstall.js'"
   },
   "dependencies": {
-    "@history-navigation/react-history": "^0.0.0",
+    "@history-navigation/react-history": "^0.0.1-rc.0",
     "prop-types": "^15.7.2",
     "react-router": "^5.0.1",
     "use-react-router": "^1.0.7"
