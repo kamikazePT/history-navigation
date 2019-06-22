@@ -1,7 +1,7 @@
 {
-  "name": "@history-navigation/core",
+  "name": "@history-navigation/react-history",
   "version": "0.0.0",
-  "description": "Wrapper of the history module to listen for navigation events",
+  "description": "React bindings for history navigation",
   "repository": "",
   "author": "Afonso Santos aka KamikazePT",
   "license": "MIT",
@@ -14,5 +14,13 @@
   ],
   "scripts": {
     "preinstall": "'../../scripts/preinstall.js'"
+  },
+  "dependencies": {
+    "@history-navigation/history": "^0.0.0",
+    "prop-types": "^15.7.2",
+    "use-react-router": "^1.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
   }
 }

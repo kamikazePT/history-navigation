@@ -31,13 +31,20 @@ export default function (onForward, onBack) {
   return this.listen((location) => {
     const { key } = location;
 
-    const index = key ? keys.indexOf(key) : 0;
+    const index = keys.indexOf(key);
+    const hackedIndex = key ? index : 0;
     const previousIndex = keys.indexOf(previousKey);
-    if (index > previousIndex || index === -1) {
-      if (index < 0) keys.push(key);
-      onForward();
+
+    if (hackedIndex > previousIndex || hackedIndex === -1) {
+      let steps;
+      if (hackedIndex < 0) {
+        steps = 1;
+        keys.push(key);
+      } else steps = hackedIndex - previousIndex;
+
+      onForward(steps);
     } else {
-      onBack();
+      onBack(previousIndex - index);
     }
 
     previousKey = key;

@@ -1,17 +1,16 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import listenToNavigation from '@history-navigation/core';
-import NAVIGATION from '../domain/constants';
+import listenToNavigation from '@history-navigation/history';
 
 export default class Wrapper extends Component {
-  state = NAVIGATION.FORWARD;
+  state = { wasForward: false, steps: 0, wasBackward: false };
 
   componentDidMount() {
     const { history } = this.props;
 
     history::listenToNavigation(
-      () => this.setState(NAVIGATION.FORWARD),
-      () => this.setState(NAVIGATION.BACK),
+      steps => this.setState({ wasForward: true, wasBackward: false, steps }),
+      steps => this.setState({ wasForward: false, wasBackward: true, steps }),
     );
   }
 

@@ -7,7 +7,7 @@ import multiInput from 'rollup-plugin-multi-input';
 
 const { LERNA_PACKAGE_NAME } = process.env;
 const PACKAGE_ROOT_PATH = process.cwd();
-const INPUT_FILE = path.resolve(PACKAGE_ROOT_PATH, 'src/**/index.js');
+const INPUT_FILES = ['src/**/index.js', 'src/**/index.jsx'].map(input => path.resolve(PACKAGE_ROOT_PATH, input));
 const OUTPUT_DIR = path.resolve(PACKAGE_ROOT_PATH, 'dist');
 const PKG_JSON = require(path.resolve(PACKAGE_ROOT_PATH, 'package.json'));
 const IS_BROWSER_BUNDLE = !!PKG_JSON.browser;
@@ -37,7 +37,7 @@ export default formats.map(format => ({
     nodeResolve({ extensions: ['.js', '.jsx'] }),
     multiInput(),
   ],
-  input: [INPUT_FILE],
+  input: INPUT_FILES,
   external: IS_BROWSER_BUNDLE ? undefined : ALL_MODULES,
   output: {
     dir: path.join(OUTPUT_DIR, format),

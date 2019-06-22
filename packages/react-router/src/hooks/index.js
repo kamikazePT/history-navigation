@@ -1,17 +1,10 @@
-import { useState, useEffect } from 'react';
-import listenToNavigation from '@history-navigation/core';
-import NAVIGATION from '../domain/constants';
+import { useRoutingNavigation } from '@history-navigation/react-history';
+import useReactRouter from 'use-react-router';
 
-export default function (history) {
-  const [movement, setMovement] = useState(NAVIGATION.FORWARD);
+export default function () {
+  const { history } = useReactRouter();
 
-  useEffect(
-    () => history::listenToNavigation(
-      () => setMovement(NAVIGATION.FORWARD),
-      () => setMovement(NAVIGATION.BACK),
-    ),
-    [],
-  );
+  const movement = useRoutingNavigation(history);
 
   return movement;
 }
