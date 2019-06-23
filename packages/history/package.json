@@ -1,8 +1,8 @@
 {
   "name": "@history-navigation/history",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.0",
   "description": "Wrapper of the history module to listen for navigation events",
-  "repository": "",
+  "repository": "https://github.com/kamikazePT/history-navigation/tree/master/packages/history",
   "author": "Afonso Santos aka KamikazePT",
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -10,8 +10,5 @@
   "files": [
     "dist/cjs/*",
     "dist/esm/*"
-  ],
-  "scripts": {
-    "preinstall": "'../../scripts/preinstall.js'"
-  }
+  ]
 }

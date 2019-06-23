@@ -5,7 +5,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "repository": "",
+  "repository": "https://github.com/kamikazePT/history-navigation",
   "author": "Afonso Santos aka KamikazePT",
   "license": "MIT",
   "private": true,
@@ -21,7 +21,8 @@
     "test": "cross-env NODE_ENV=test jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint '**/*.{js,jsx}'",
-    "format": "prettier-eslint '**/*.{js,jsx}' --write"
+    "format": "prettier-eslint '**/*.{js,jsx}' --write",
+    "doc": "cross-env NODE_ENV=development lerna exec --parallel -- jsdoc-md -s '**/*.{js,jsx}' -m README.md -t API"
   },
   "engines": {
     "node": ">=10.0.0",
@@ -60,6 +61,7 @@
     "husky": "^2.3.0",
     "jest": "^24.8.0",
     "jest-runner-eslint": "^0.7.3",
+    "@kamikazept/jsdoc-md": "^1.0.0",
     "lerna": "^3.15.0",
     "lint-staged": "^8.1.7",
     "prettier-eslint": "^8.8.2",

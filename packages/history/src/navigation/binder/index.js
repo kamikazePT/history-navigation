@@ -1,28 +1,37 @@
 /**
- * @module listenToNaviation (binder function)
+ * @module listenToNaviationBinder
  */
 
 /**
  * Callback to execute when history moves forward.
  *
+ * @kind function
+ * @name onForward
  * @callback onForward
+ * @param {number} steps - number of steps in history
  */
 
 /**
  * Callback to execute when history moves backwards.
  *
+ * @kind function
+ * @name onBack
  * @callback onBack
+ * @param {number} steps - number of steps in history
  */
 
 /**
  * listen to history navigation changes
  *
+ * @kind function
+ * @name listenToNaviationBinder
+ *
+ * @param {onForward} onForward - callback on forward movement
+ * @param {onBack} onBack - callback on back movement
  * @example history::listenToNavigation(onForward, onBack)
  * @example listenToNavigation.bind(history)(onForward, onBack)
  *
  * @this
- * @param {onForward} onForward
- * @param {onBack} onBack
  */
 export default function (onForward, onBack) {
   const keys = [];

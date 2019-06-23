@@ -1,8 +1,8 @@
 {
   "name": "@history-navigation/react-router",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.0",
   "description": "React Router bindings for history navigation",
-  "repository": "",
+  "repository": "https://github.com/kamikazePT/history-navigation/tree/master/packages/react-router",
   "author": "Afonso Santos aka KamikazePT",
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -11,16 +11,13 @@
     "dist/cjs/*",
     "dist/esm/*"
   ],
-  "scripts": {
-    "preinstall": "'../../scripts/preinstall.js'"
-  },
   "dependencies": {
-    "@history-navigation/react-history": "^0.0.1-alpha.0",
+    "@history-navigation/react-history": "^0.0.0",
     "prop-types": "^15.7.2",
     "react-router": "^5.0.1",
     "use-react-router": "^1.0.7"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": ">= 16.8.0"
   }
 }

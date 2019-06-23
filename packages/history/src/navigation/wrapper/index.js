@@ -1,25 +1,17 @@
 import listenToNavigation from '../binder';
 
 /**
- * @module listenToNaviation (wrapper function)
+ * @module listenToNaviationWrapper
  */
 
 /**
- * Callback to execute when history moves forward.
+ * @kind function
+ * @name listenToNaviationWrapper
  *
- * @callback onForward
- */
-
-/**
- * Callback to execute when history moves backwards.
- *
- * @callback onBack
- */
-
-/**
- * @example listenToNavigation(history)(onForward, onBack)
  *
  * @param {object} history - history object to use
  * @returns {function(onForward, onBack)} that listens to history navigation changes
+ * @example listenToNavigation(history)(onForward, onBack)
+ *
  */
 export default history => history::listenToNavigation;
