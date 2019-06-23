@@ -11,6 +11,9 @@
     "dist/cjs/*",
     "dist/esm/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@history-navigation/history": "^1.0.0-alpha.0",
     "prop-types": "^15.7.2",
@@ -18,5 +21,6 @@
   },
   "peerDependencies": {
     "react": ">= 16.8.0"
-  }
+  },
+  "gitHead": "90afb8e4472053bf8d25b29e3dc1f4d1515d95db"
 }

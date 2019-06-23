@@ -10,5 +10,9 @@
   "files": [
     "dist/cjs/*",
     "dist/esm/*"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "90afb8e4472053bf8d25b29e3dc1f4d1515d95db"
 }
