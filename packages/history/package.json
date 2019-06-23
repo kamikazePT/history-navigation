@@ -1,6 +1,6 @@
 {
   "name": "@history-navigation/history",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Wrapper of the history module to listen for navigation events",
   "repository": "https://github.com/kamikazePT/history-navigation/tree/master/packages/history",
   "author": "Afonso Santos aka KamikazePT",

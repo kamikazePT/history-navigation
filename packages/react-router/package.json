@@ -1,6 +1,6 @@
 {
   "name": "@history-navigation/react-router",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "React Router bindings for history navigation",
   "repository": "https://github.com/kamikazePT/history-navigation/tree/master/packages/react-router",
   "author": "Afonso Santos aka KamikazePT",
@@ -12,7 +12,7 @@
     "dist/esm/*"
   ],
   "dependencies": {
-    "@history-navigation/react-history": "^0.0.0",
+    "@history-navigation/react-history": "^1.0.0-alpha.0",
     "prop-types": "^15.7.2",
     "react-router": "^5.0.1",
     "use-react-router": "^1.0.7"
